@@ -10,5 +10,5 @@ jobs:
       - name: 'Dependency Review'
         uses: dsp-testing/dependency-review-action@main
         with:
-          repo_token: ${{ secrets.REPO_TOKEN }}
+          repo-token: ${{ secrets.REPO_TOKEN }}
 
