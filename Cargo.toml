@@ -13,4 +13,4 @@ serde = { version = "1.0.117", features = ["derive"] }
 serde_json = "1.0.0"
 rayon = "1.5.1"
 Simple-Wayland-HotKey-Daemon = ">= 1.1.4, < 1.2.0"
-bingrep = "= 0.8.5"
+bingrep = "= 0.10.0"
