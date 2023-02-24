@@ -1,0 +1,17 @@
+name: Dependency Graph Test Workflow Maven Snapshot
+on: [pull_request]
+
+jobs:
+  DependencyGraphAutoSnapshotSubmission:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout target repository
+      uses: actions/checkout@v3
+    - name: Install JDK
+      uses: actions/setup-java@v3
+      with:
+        java-version-file: .java-version
+        distribution: zulu
+        cache: maven
+    - name: Submit snapshot
+      uses: advanced-security/maven-dependency-submission-action@v3
