@@ -27,7 +27,8 @@ dependencies = [
 
 [[package]]
 name = "ckb"
-version = "0.42.0"
+version = "0.101.4" 
+
 
 [[package]]
 name = "hyper"
