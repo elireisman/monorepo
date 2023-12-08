@@ -22,7 +22,7 @@
   ],
   "type": "commonjs",
   "dependencies": {
-    "needle": "2.9.2",
+    "needle": "2.9.3",
     "express-jwt": "6.9.1",
     "helmet": "4.6.0"
   },
