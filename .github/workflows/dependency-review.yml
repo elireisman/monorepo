@@ -8,4 +8,7 @@ jobs:
       - name: 'Checkout Repository'
         uses: actions/checkout@v3
       - name: 'Dependency Review'
+        id: dr_test
         uses: actions/dependency-review-action@laughedelic:feat/data-outputs
+      - name: 'print new outputs test'
+        run: echo ${{join(steps.dr_test.outputs.*, '\n')}}
