@@ -10,6 +10,15 @@ jobs:
       - name: 'Dependency Review'
         id: dr_test
         uses: actions/dependency-review-action@84b80e6e84bc7e685a43aa71482021b6cd1426b1
-      - name: 'print new outputs test'
+      - name: 'print new outputs: vulnerable-changes'
         if: failure()
-        run: echo "${{join(steps.dr_test.outputs.*, ' ')}}"
+        run: echo "${{steps.dr_test.outputs.vulnerable-changes}}"
+      - name: 'print new outputs: dependency-changes'
+        if: failure()
+        run: echo "${{steps.dr_test.outputs.dependency-changes}}"
+      - name: 'print new outputs: invalid-license-changes'
+        if: failure()
+        run: echo "${{steps.dr_test.outputs.invalid-license-changes}}"
+      - name: 'print new outputs: comment-content'
+        if: failure()
+        run: echo "${{steps.dr_test.outputs.comment-content}}"
