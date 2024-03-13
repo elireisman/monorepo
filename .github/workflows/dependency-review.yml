@@ -22,3 +22,4 @@ jobs:
       - name: 'print new outputs: comment-content'
         if: failure()
         run: echo "${{steps.dr_test.outputs.comment-content}}"
+
