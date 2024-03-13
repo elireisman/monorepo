@@ -9,6 +9,6 @@ jobs:
         uses: actions/checkout@v3
       - name: 'Dependency Review'
         id: dr_test
-        uses: actions/dependency-review-action@laughedelic:feat/data-outputs
+        uses: actions/dependency-review-action@84b80e6e84bc7e685a43aa71482021b6cd1426b1
       - name: 'print new outputs test'
         run: echo ${{join(steps.dr_test.outputs.*, '\n')}}
