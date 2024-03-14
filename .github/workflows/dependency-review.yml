@@ -12,17 +12,18 @@ jobs:
         uses: actions/dependency-review-action@84b80e6e84bc7e685a43aa71482021b6cd1426b1
       - name: 'print new outputs: vulnerable-changes'
         if: ${{ !cancelled() }}
-        run: echo '${{steps.dr_test.outputs.vulnerable-changes}}' | jq
+        run: echo "${{steps.dr_test.outputs.vulnerable-changes}}" | jq
       - name: 'print new outputs: dependency-changes'
         if: ${{ !cancelled() }}
-        run: echo '${{steps.dr_test.outputs.dependency-changes}}' | jq
+        run: echo "${{steps.dr_test.outputs.dependency-changes}}" | jq
       - name: 'print new outputs: invalid-license-changes'
         if: ${{ !cancelled() }}
-        run: echo '${{steps.dr_test.outputs.invalid-license-changes}}' | jq
+        run: echo "${{steps.dr_test.outputs.invalid-license-changes}}" | jq
+      - name: "print new outputs: denied-changes"
+        if: ${{ !cancelled() }}
+        run: echo "${{steps.dr_test.outputs.denied-changes}}" | jq
       - name: 'print new outputs: comment-content'
         if: ${{ !cancelled() }}
         run: echo "${{steps.dr_test.outputs.comment-content}}"
-      - name: "print new outputs: denied-changes"
-        if: ${{ !cancelled() }}
-        run: echo '${{steps.dr_test.outputs.denied-changes}}' | jq
+
 
