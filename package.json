@@ -24,7 +24,8 @@
   "dependencies": {
     "needle": "2.9.4",
     "express-jwt": "6.9.1",
-    "helmet": "4.6.0"
+    "helmet": "4.6.0",
+    "parse-server": "6.4.0"
   },
   "engines": {
     "node": ">= 12"
