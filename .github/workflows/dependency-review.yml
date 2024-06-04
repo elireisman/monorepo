@@ -10,4 +10,4 @@ jobs:
       - name: 'Dependency Review'
         uses: actions/dependency-review-action@max-comment-length-WIP
         with:
-          content-summary-in-pr: always
+          comment-summary-in-pr: always
