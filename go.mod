@@ -1,6 +1,6 @@
 module github.com/bteng22/monorepo
 
-go 1.22.5
+go 1.21.7
 
 require (
 	github.com/DATA-DOG/go-txdb v0.1.9
