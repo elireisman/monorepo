@@ -1,0 +1,17 @@
+{
+  "name": "dep-review-test",
+  "version": "1.0.0",
+  "description": "Description of your package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "1.43.1",
+    "@types/node": "^20.12.7",
+    "dotenv": "^16.4.5"
+  }
+}
